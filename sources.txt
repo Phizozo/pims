@@ -1,0 +1,15 @@
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\Main.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\db\DatabaseConnection.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\model\Medicine.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\model\Supplier.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\model\User.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\AdminDashboard.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\BillingWindow.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\CashierDashboard.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\ExpiryReport.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\LoginFrame.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\MedicineManager.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\PrintUtility.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\SalesReport.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\SupplierManager.java
+C:\Users\skhos\OneDrive\Documents\PIMS\src\com\pims\ui\UserManager.java
