@@ -1,3 +1,6 @@
-.idea/  
+idea/ 
+*.iml 
 classes/ 
-*.class 
+out/ 
+///*.class 
+.gitignore.txt 
