@@ -7,10 +7,7 @@ import java.sql.SQLException;
 /**
  * DatabaseConnection - a simple utility class that creates a connection
  * to the MySQL database used by the PIMS application.
- *
- * To use this project:
- *  1. Import database.sql into MySQL (workbench or command line).
- *  2. Change the USER and PASSWORD below to match your MySQL login.
+
  */
 public class DatabaseConnection {
 
