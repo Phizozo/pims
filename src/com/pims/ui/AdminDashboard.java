@@ -177,9 +177,7 @@ public class AdminDashboard extends JFrame {
         return card;
     }
 
-    /**
-     * Loads quick statistics for the overview tab.
-     */
+
     private void loadOverviewStats() {
         String query = "SELECT "
                 + "(SELECT COUNT(*) FROM medicines) AS total_medicines, "

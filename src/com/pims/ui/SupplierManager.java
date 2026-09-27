@@ -1,7 +1,6 @@
 package com.pims.ui;
 
 import com.pims.db.DatabaseConnection;
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;

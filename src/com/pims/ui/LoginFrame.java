@@ -2,7 +2,6 @@ package com.pims.ui;
 
 import com.pims.db.DatabaseConnection;
 import com.pims.model.User;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -11,11 +10,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-/**
- * LoginFrame - the Authentication Module.
- * Validates username/password against the database and redirects
- * the user to the AdminDashboard or CashierDashboard based on role.
- */
+
 public class LoginFrame extends JFrame {
 
     private static final long serialVersionUID = 1L;

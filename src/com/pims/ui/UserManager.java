@@ -1,12 +1,10 @@
 package com.pims.ui;
 
 import com.pims.db.DatabaseConnection;
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.sql.*;
-
 import com.pims.model.User;
 
 /**
@@ -287,9 +285,6 @@ public class UserManager extends JPanel {
         return "";
     }
 
-    /**
-     * Counts how many Administrator accounts exist (based on current table data).
-     */
     private int countAdmins() {
         int count = 0;
         for (int i = 0; i < tableModel.getRowCount(); i++) {

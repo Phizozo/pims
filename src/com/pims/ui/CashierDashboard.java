@@ -2,7 +2,6 @@ package com.pims.ui;
 
 import com.pims.db.DatabaseConnection;
 import com.pims.model.User;
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -79,9 +78,7 @@ public class CashierDashboard extends JFrame {
         return bar;
     }
 
-    /**
-     * Left panel: search + medicine list + "Add to Cart" and "Stock Check" buttons.
-     */
+
     private JPanel createMedicinePanel() {
         JPanel panel = new JPanel(new BorderLayout(10, 10));
         panel.setBorder(BorderFactory.createTitledBorder("Medicines"));
@@ -131,9 +128,7 @@ public class CashierDashboard extends JFrame {
         return panel;
     }
 
-    /**
-     * Right panel: the shopping cart, total and Checkout / Clear Cart buttons.
-     */
+
     private JPanel createCartPanel() {
         JPanel panel = new JPanel(new BorderLayout(10, 10));
         panel.setBorder(BorderFactory.createTitledBorder("Cart"));
@@ -304,9 +299,7 @@ public class CashierDashboard extends JFrame {
         lblTotal.setText("Total: R" + String.format("%.2f", total));
     }
 
-    /**
-     * Stock check tool: quickly looks up a medicine price and availability.
-     */
+
     private void checkStock() {
         String name = JOptionPane.showInputDialog(this,
                 "Enter the medicine name to check stock and price:");
@@ -364,10 +357,7 @@ public class CashierDashboard extends JFrame {
         new BillingWindow(this, cartModel, total, loggedInUser);
     }
 
-    /**
-     * Called by the BillingWindow after a sale is saved.
-     * Clears the cart and refreshes the medicine list so stock levels are correct.
-     */
+
     public void saleCompleted() {
         clearCart();
         loadMedicines("");

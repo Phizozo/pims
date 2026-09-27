@@ -1,7 +1,6 @@
 package com.pims.ui;
 
 import com.pims.db.DatabaseConnection;
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -11,7 +10,6 @@ import java.time.LocalDate;
 /**
  * ExpiryReport - Administrator module.
  * Shows medicines that have already expired as well as those expiring
- * within the next 30 days (one month).
  */
 public class ExpiryReport extends JPanel {
 
@@ -66,7 +64,7 @@ public class ExpiryReport extends JPanel {
     }
 
     /**
-     * Loads the report based on the selected filter option.
+     * Loads the report
      */
     private void loadReport() {
         tableModel.setRowCount(0);

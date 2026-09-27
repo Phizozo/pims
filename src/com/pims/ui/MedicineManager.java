@@ -1,7 +1,6 @@
 package com.pims.ui;
 
 import com.pims.db.DatabaseConnection;
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
@@ -282,7 +281,7 @@ public class MedicineManager extends JPanel {
     }
 
     /**
-     * Updates the currently selected medicine.
+     * Updates  selected medicine.
      */
     private void updateMedicine() {
         if (selectedMedicineId == -1) {
@@ -382,9 +381,6 @@ public class MedicineManager extends JPanel {
         table.clearSelection();
     }
 
-    /**
-     * Simple form validation.
-     */
     private boolean validateForm(boolean isUpdate) {
         if (txtName.getText().trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Medicine name is required.");
@@ -417,9 +413,7 @@ public class MedicineManager extends JPanel {
         return true;
     }
 
-    /**
-     * After updating, selects the same row again so the form stays filled.
-     */
+
     private void findAndSelectRow(int medicineId) {
         for (int i = 0; i < tableModel.getRowCount(); i++) {
             if (Integer.parseInt(tableModel.getValueAt(i, 0).toString()) == medicineId) {
@@ -429,9 +423,7 @@ public class MedicineManager extends JPanel {
         }
     }
 
-    /**
-     * Cell renderer that paints low-stock rows red.
-     */
+
     private class LowStockRenderer extends DefaultTableCellRenderer {
         private static final long serialVersionUID = 1L;
 

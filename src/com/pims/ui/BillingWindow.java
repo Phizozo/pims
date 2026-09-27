@@ -2,7 +2,6 @@ package com.pims.ui;
 
 import com.pims.db.DatabaseConnection;
 import com.pims.model.User;
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -13,14 +12,7 @@ import java.sql.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * BillingWindow - shows the bill for the current cart, lets the cashier
- * enter the cash received, and on confirmation:
- *  1. Inserts the sale header into the sales table
- *  2. Inserts each line item into the sale_items table
- *  3. Reduces the medicine stock
- *  4. Saves a copy of the bill to a text file
- */
+
 public class BillingWindow extends JFrame {
 
     private static final long serialVersionUID = 1L;
@@ -131,9 +123,7 @@ public class BillingWindow extends JFrame {
         billArea.setCaretPosition(0);
     }
 
-    /**
-     * Recalculates change as the cashier types the amount paid.
-     */
+
     private void updateChange() {
         try {
             double paid = Double.parseDouble(txtCashPaid.getText().trim());
