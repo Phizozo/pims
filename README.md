@@ -1,4 +1,5 @@
 PIMS - Pharmacy Inventory Management System
+Student: Simphiwe Skosana
 
 A simple desktop app for a pharmacy. It is built with Java Swing (for the
 screen buttons, tables and menus) and MySQL (to store the data).
@@ -53,22 +54,17 @@ You need: Java 8+ (JDK) and MySQL installed on your computer.
 3. Run the script 'database.sql'. It will create the 'pims_db' database,
    the tables and some sample data for you.
 4. Make sure the MySQL Connector/J jar file is in the 'lib' folder.
-5. If your MySQL username / password are different from the default,
+5. If  MySQL username / password are different from the default,
    open 'src/com/pims/db/DatabaseConnection.java' and change:
    '''java
    private static final String DB_USER = "root";
    private static final String DB_PASSWORD = "Phizozo.1@";
    '''
 
-How to Run
+How to Run?
 
-Double-click 'run.bat' (compiles and starts the program).
-
-Or run these two commands in the project folder:
-'''
-javac -cp "lib\" -d classes @sources.txt
-java -cp "classes;lib\" com.pims.Main
-'''
+1. Import database.sql in MySQL
+2. Run run.bat or Main.java
 
 Log in with 'admin / admin123' or 'cashier1 / cashier123'.
 
@@ -83,7 +79,8 @@ Folder/ File	What it does?
 'src/com/pims/ui'	Screens (login, admin, cashier, reports)
 'src/com/pims/db'	How the program connects to MySQL
 'src/com/pims/model'	Data objects(Medicine, Supplier, User)
-'classes'	Compiled program files (created when you run)
+
+
 
 
 
